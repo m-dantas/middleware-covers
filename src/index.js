@@ -1,7 +1,7 @@
 const dotenv = require('dotenv').config()
 const express = require("express");
 const app = express()
-const PORT = process.env.PORT
+const { PORT } = require('./config')
 
 const covers = require('./routes/covers')
 
